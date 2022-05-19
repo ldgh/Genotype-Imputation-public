@@ -1,5 +1,6 @@
 ### Summary
 
+
 - [Introduction](#introduction)
 - [Imputation](#imputation)
 - [Requirements](#requirements)
@@ -10,7 +11,9 @@
 - [Example of the execution of the command line](#example-of-the-execution-of-the-command-line)
 - [References](#references)
 
-## Introduction
+## Introduction 
+
+
 ![0](https://user-images.githubusercontent.com/73356412/169386169-38ec0c4e-d84c-4ada-acd0-488940120644.png)
 
 ![imagem_2022-05-19_185824468 (cópia)](https://user-images.githubusercontent.com/73356412/169386287-ed0f3215-1a91-4171-8b91-8faccb8b883e.png)
@@ -25,9 +28,12 @@
 
 ## Imputation
 
+
 The newest imputation script developed by the LDGH crew to impute genotypes by either Shapeit2 or Shapeit4 and Impute2 or Impute4. This script can be also used to independently perform the tasks of haplotyping and/or imputation, alongside with converting the final data to vcf or bgen file formats, and run the snp-stats flag from qctool.
 
+ 
 ## Requirements
+
 
 Imputation.py and modificaLegend.py scripts were implemented using python language. Use the following programs in this execution:
 
@@ -41,6 +47,7 @@ Imputation.py and modificaLegend.py scripts were implemented using python langua
 
 ## Scripts
 
+
 **ModificaLegend.py**
 
 > This script modifies the reference panel file format .hap e .legend, and creates the file .samples in the intended design e formats required for conversion for the VCF format by Bcftools
@@ -51,6 +58,8 @@ Imputation.py and modificaLegend.py scripts were implemented using python langua
 
 
 ## Mandatory parameters:
+
+
 * ***analysis or -a***		
 > File with the description of analysis to be performed (Haplotype, Imputate, Chunk)
 
@@ -71,7 +80,6 @@ Imputation.py and modificaLegend.py scripts were implemented using python langua
 
 
 ## Mandatory input files:
-
 
 ##### Analysis
 
@@ -108,6 +116,7 @@ Database2	/media/imputation/database2_chr*.vcf.gz	1	22	VCF	Yes	No
 ````
 
 ##### Reference
+
 
 > File with the path of reference files. This file must have two columns (Name of reference dataset and Path to the reference file) separated by \t. There must be at least three type of files:
 MAPS - the genetic map to the required chromosome to be haplotyped and/or imputed
@@ -159,6 +168,8 @@ impute2	/media/imputation/impute2
 python3 main.py -a analysis.txt -d database.txt -r reference.txt -p programs -t 10 -f /home/imputation/
 ````
 ## References
+###### [Click to return to summary](#summary)
+
 * (colocar aqui)
 * (colocar aqui)
 * (colocar aqui)
