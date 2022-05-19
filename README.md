@@ -18,51 +18,12 @@ Imputation.py and modificaLegend.py scripts were implemented using python langua
 
 **ModificaLegend.py**
 
-> this script modifies the reference panel file format .hap e .legend, and creates the file .samples in the intended design e formats required for conversion for the VCF format by Bcftools
+> This script modifies the reference panel file format .hap e .legend, and creates the file .samples in the intended design e formats required for conversion for the VCF format by Bcftools
 
 **main.py**
 
-> this script haplotypes and/or imputes, implemented in python3 language using the programs Shapeit2 and/or Shapeit4 and Impute2 and/or Impute4. There are mandatory files, mandatory parameters and optional parameters:
+> This script haplotypes and/or imputes, implemented in python3 language using the programs Shapeit2 and/or Shapeit4 and Impute2 and/or Impute4. There are mandatory files, mandatory parameters and optional parameters:
 
-## Mandatory input files:
-
-***analysis.txt***    
-
-> File with the description of analysis to be performed (Haplotype, Imputate, Chunk)
-```
-
-Exemplo Ricardo
-
-```
-***database.txt*** 
-
-> File with the path of databases files
-```
-
-Exemplo Ricardo
-
-```
-***reference.txt***   
-
-> File with the path of reference files
-```
-
-Exemplo Ricardo
-
-```
-***programs.txt***    
-
-> File with the path to the programs used
-```
-plink /media/imputation/plink
-bcftools  /media/imputation/bcftools
-shapeit4  /media/imputation/shapeit4
-vcftools  /media/imputation/vcftools
-impute4 /media/imputation/impute4.1.2_r300.1
-qctool  /media/imputation/qctool
-shapeit2  /media/imputation/shapeit2
-impute2 /media/imputation/impute2
-```
 
 ## Mandatory parameters:
 * ***analysis or -a***		
@@ -82,6 +43,75 @@ impute2 /media/imputation/impute2
 
 * ***folder or -f***		
 > Folder to store the intermediary files and output files
+
+
+## Mandatory input files:
+
+
+##### Analysis
+
+
+> File with the description of analysis to be performed (Haplotype, Imputate, Chunk). This file must be separated by \t.
+
+Example:
+````
+%Haplotype
+Database1
+Database2	Reference
+
+%Impute
+Database1	Reference
+Database2	Reference
+
+%Chunk	7000000
+````
+
+##### Database
+
+> File with the path of databases files and other important information, such as: 
+First and Last Chromosome
+Type of Data
+If the data is Gzipped
+If the data is Phased
+
+Example:
+
+````
+#POP	Path	FirstChr	LastChr	DataType	Gzipped?	Phased
+Database1	/media/imputation/database1_chr*.vcf.gz	1	22	VCF	Yes	No
+Database2	/media/imputation/database2_chr*.vcf.gz	1	22	VCF	Yes	No
+````
+
+##### Reference
+
+> File with the path of reference files. This file must have two columns (Name of reference dataset and Path to the reference file) separated by \t. There must be at least three type of files:
+MAPS - the genetic map to the required chromosome to be haplotyped and/or imputed
+VCF - the gzipped vcf file of the reference dataset
+HAP - the .hap .sam .legend files of the reference dataset
+
+Example:
+
+```
+MAPS	/media/imputation/chr*.b38.gmap.gz
+Reference	VCF	/media/imputation/Reference_panel_chr*.vcf.gz
+Reference	HAP	/media/imputation/Reference_panel_hg38_chr*
+```
+
+##### Programs
+
+> File with the path to the programs used. This file must have two columns (Name of the program and Path to the program) separated by \t.
+
+Example:
+```
+plink	/media/imputation/plink
+bcftools	/media/imputation/bcftools
+shapeit4	/media/imputation/shapeit4
+vcftools	/media/imputation/vcftools
+impute4	/media/imputation/impute4.1.2_r300.1
+qctool	/media/imputation/qctool
+shapeit2	/media/imputation/shapeit2
+impute2	/media/imputation/impute2
+```
 
 ## Optional parameters:
 * ***check or -c***		
@@ -103,18 +133,5 @@ impute2 /media/imputation/impute2
 ````
 python3 main.py -a analysis.txt -d database.txt -r reference.txt -p programs -t 10 -f /home/imputation/
 ````
-## Analysis
 
-File with the description of analysis to be performed (Haplotype, Imputate, Chunk). This file must be separated by \t.
-Example:
-````
-%Haplotype
-Database1
-Database2	Reference
-
-%Impute
-Database1	Reference
-Database2	Reference
-
-%Chunk	7000000
 
