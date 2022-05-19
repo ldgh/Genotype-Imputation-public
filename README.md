@@ -31,7 +31,7 @@ The newest imputation script developed by the LDGH crew to impute genotypes by e
 
 Imputation.py and modificaLegend.py scripts were implemented using python language. Use the following programs in this execution:
 
-* Plink
+* [Plink](https://www.cog-genomics.org/plink/)
 * Bcftools
 * Shapeit2 and/or Shapeit4 (program of your choosing)
 * Vcftools
