@@ -1,4 +1,14 @@
-# Imputation
+### Summary
+
+- [Imputation](#imputation)
+- [Requirements](#requirements)
+- [Scripts](#scripts)
+- [Mandatory parameters](#mandatory-parameters)
+- [Mandatory input files](#mandatory-input-files)
+- [Optional parameters](#optional-parameters)
+- [Example of the execution of the command line](#example-of-the-execution-of-the-command-line)
+
+## Imputation
 
 The newest imputation script developed by the LDGH crew to impute genotypes by either Shapeit2 or Shapeit4 and Impute2 or Impute4. This script can be also used to independently perform the tasks of haplotyping and/or imputation, alongside with converting the final data to vcf or bgen file formats, and run the snp-stats flag from qctool.
 
