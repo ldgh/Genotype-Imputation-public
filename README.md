@@ -1,4 +1,5 @@
 ### Summary
+
 - [Introduction](#introduction)
 - [Imputation](#imputation)
 - [Requirements](#requirements)
@@ -10,8 +11,17 @@
 - [References](#references)
 
 ## Introduction
+![0](https://user-images.githubusercontent.com/73356412/169386169-38ec0c4e-d84c-4ada-acd0-488940120644.png)
 
-(Imagens vao aqui)
+![imagem_2022-05-19_185824468 (cópia)](https://user-images.githubusercontent.com/73356412/169386287-ed0f3215-1a91-4171-8b91-8faccb8b883e.png)
+
+![imagem_2022-05-19_185936498 (cópia)](https://user-images.githubusercontent.com/73356412/169386358-e090711e-3452-4487-bc95-930a2f5c6893.png)
+
+![imagem_2022-05-19_185951421 (cópia)](https://user-images.githubusercontent.com/73356412/169386407-2d6f60e6-a076-4537-a26d-c7e0673f4774.png)
+
+![imagem_2022-05-19_190004335 (cópia)](https://user-images.githubusercontent.com/73356412/169386411-896ab0b3-ff19-4e4c-8fec-a0e5976cd913.png)
+
+![imagem_2022-05-19_190312050 (cópia)](https://user-images.githubusercontent.com/73356412/169386424-b3433b62-9c66-4de1-bb18-b36a5b8952b5.png)
 
 ## Imputation
 
