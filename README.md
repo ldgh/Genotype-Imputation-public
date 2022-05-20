@@ -190,8 +190,4 @@ python3 main.py -a analysis.txt -d database.txt -r reference.txt -p programs -t 
 >This imputation pipeline and panel were developed as a product for future colaborations in Latin American cohorts to use a properly schematics in order to improve their analysis and discoveries of novel associations that could be overlooked in a poorly diverse reference panel.
 * MARCHINI, J.; HOWIE, B. Genotype imputation for genome-wide association studies. Nature Reviews Genetics, v. 11, n. 7, p. 499–511, 2010.
 * Magalhães, W., Araujo, N. M., Leal, T. P., Araujo, G. S., Viriato, P., Kehdy, F. S., Costa, G. N., Barreto, M. L., Horta, B. L., Lima-Costa, M. F., Pereira, A. C., Tarazona-Santos, E., Rodrigues, M. R., & Brazilian EPIGEN Consortium (2018). EPIGEN-Brazil Initiative resources: a Latin American imputation panel and the Scientific Workflow. Genome research, 28(7), 1090–1095. https://doi.org/10.1101/gr.225458.117
-* (colocar aqui)
-* (colocar aqui)
-* (colocar aqui)
-* (colocar aqui)
-* (colocar aqui)
+
