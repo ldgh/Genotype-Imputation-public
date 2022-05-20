@@ -40,7 +40,7 @@
 
 The next step is the process itself **(D)**, composed by three main tasks: pre-phasing, haplotype phase inference, and imputation. The pre-phasing step performs strand alignment between target and reference panel using SHAPEIT2 or SHAPEIT4, PLINK, and the scripting language AWK. Using the metodology implemented in the SHAPEIT software to infere the haplotype phase of the target data set, producing .haps and .sample files.
 
-![imagem_2022-05-19_190312050 (cópia)](https://user-images.githubusercontent.com/73356412/169386424-b3433b62-9c66-4de1-bb18-b36a5b8952b5.png)
+![image](https://user-images.githubusercontent.com/51415738/169545061-6e86a35c-96ff-48bc-b57c-0f039132c978.png)
 
 
 ## Imputation
