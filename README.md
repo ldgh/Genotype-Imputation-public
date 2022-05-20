@@ -49,7 +49,7 @@ The next step is the process itself **(D)**, composed by three main tasks: pre-p
 ## Imputation
 ###### [Click to return to summary](#summary)
 
- The newest imputation script developed by the LDGH crew to impute genotypes by either Shapeit2 or Shapeit4 and Impute2 or Impute4. This script can be also used to independently perform the tasks of haplotyping and/or imputation, alongside with converting the final data to vcf or bgen file formats, and run the snp-stats flag from qctool.
+ The newest imputation script developed by the [LDGH](https://ldgh.com.br/) crew to impute genotypes by either Shapeit2 or Shapeit4 and Impute2 or Impute4. This script can be also used to independently perform the tasks of haplotyping and/or imputation, alongside with converting the final data to vcf or bgen file formats, and run the snp-stats flag from qctool.
 
  
 ## Requirements
