@@ -44,26 +44,26 @@ The next step is the process itself **(D)**, composed by three main tasks: pre-p
 
 
 ## Imputation
-
+###### [Click to return to summary](#summary)
 
  The newest imputation script developed by the LDGH crew to impute genotypes by either Shapeit2 or Shapeit4 and Impute2 or Impute4. This script can be also used to independently perform the tasks of haplotyping and/or imputation, alongside with converting the final data to vcf or bgen file formats, and run the snp-stats flag from qctool.
 
  
 ## Requirements
-
+###### [Click to return to summary](#summary)
 
 Imputation.py and modificaLegend.py scripts were implemented using python language. Use the following programs in this execution:
 
 * [Plink](https://www.cog-genomics.org/plink/)
-* Bcftools
-* Shapeit2 and/or Shapeit4 (program of your choosing)
-* Vcftools
-* Impute2 and/or Impute4 (program of your choosing)
-* QCtool
-* Python3
+* [Bcftools](https://samtools.github.io/bcftools/bcftools.html)
+* [Shapeit2 and/or Shapeit4](https://mathgen.stats.ox.ac.uk/genetics_software/shapeit/shapeit.html#home) (program of your choosing)
+* [Vcftools](http://vcftools.sourceforge.net/)
+* [Impute2 and/or Impute4](https://mathgen.stats.ox.ac.uk/impute/impute_v2.html) (program of your choosing)
+* [QCtool](https://www.well.ox.ac.uk/~gav/qctool_v2/)
+* [Python3](https://www.python.org/)
 
 ## Scripts
-
+###### [Click to return to summary](#summary)
 
 **ModificaLegend.py**
 
@@ -75,7 +75,7 @@ Imputation.py and modificaLegend.py scripts were implemented using python langua
 
 
 ## Mandatory parameters:
-
+###### [Click to return to summary](#summary)
 
 * ***--analysis or -a***		
 > File with the description of analysis to be performed (Haplotype, Imputate, Chunk)
@@ -97,6 +97,7 @@ Imputation.py and modificaLegend.py scripts were implemented using python langua
 
 
 ## Mandatory input files:
+###### [Click to return to summary](#summary)
 
 ##### Analysis
 
@@ -117,6 +118,7 @@ Database2	Reference
 ````
 
 ##### Database
+
 
 > File with the path of databases files and other important information, such as: 
 First and Last Chromosome
@@ -150,6 +152,7 @@ Reference	HAP	/media/imputation/Reference_panel_hg38_chr*
 
 ##### Programs
 
+
 > File with the path to the programs used. This file must have two columns (Name of the program and Path to the program) separated by \t.
 
 Example:
@@ -165,6 +168,8 @@ impute2	/media/imputation/impute2
 ```
 
 ## Optional parameters:
+###### [Click to return to summary](#summary)
+
 * ***--check or -c***		
 > Perform shapeit2 check process
 
@@ -181,13 +186,18 @@ impute2	/media/imputation/impute2
 > Print the command line, do not run
 
 ## Example of the execution of the command line:
+###### [Click to return to summary](#summary)
+
 ````
 python3 main.py -a analysis.txt -d database.txt -r reference.txt -p programs -t 10 -f /home/imputation/
 ````
 ## Citation
 ###### [Click to return to summary](#summary)
 
->This imputation pipeline and panel were developed as a product for future colaborations in Latin American cohorts to use a properly schematics in order to improve their analysis and discoveries of novel associations that could be overlooked in a poorly diverse reference panel.
+This imputation pipeline and panel were developed as a product for future colaborations in Latin American cohorts to use a properly schematics in order to improve their analysis and discoveries of novel associations that could be overlooked in a poorly diverse reference panel.
+
 * MARCHINI, J.; HOWIE, B. Genotype imputation for genome-wide association studies. Nature Reviews Genetics, v. 11, n. 7, p. 499–511, 2010.
+
 * Magalhães, W., Araujo, N. M., Leal, T. P., Araujo, G. S., Viriato, P., Kehdy, F. S., Costa, G. N., Barreto, M. L., Horta, B. L., Lima-Costa, M. F., Pereira, A. C., Tarazona-Santos, E., Rodrigues, M. R., & Brazilian EPIGEN Consortium (2018). EPIGEN-Brazil Initiative resources: a Latin American imputation panel and the Scientific Workflow. Genome research, 28(7), 1090–1095. https://doi.org/10.1101/gr.225458.117
+
 
