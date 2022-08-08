@@ -20,30 +20,30 @@
 
 ![0](https://user-images.githubusercontent.com/73356412/169386169-38ec0c4e-d84c-4ada-acd0-488940120644.png)
 
- The current imputation script is a congregation of all the metodological steps deliniated in the **Figure 2** of Magalhães et al. (2018), which are separated in the following processes:
+ The current imputation script is a congregation of all the metodological steps deliniated in Magalhães et al. (2018), which are separated in the following processes:
 * (A) Imputation Overview
 * (B) Reference Panel Creation
 * (C) Merge Reference Panels
 * (D) Pre-Phasing
 
-![imagem_2022-05-19_185824468 (cópia)](https://user-images.githubusercontent.com/73356412/169386287-ed0f3215-1a91-4171-8b91-8faccb8b883e.png)
+
 
 Overview of the complete imputation process **(A)**.
 
- ![imagem_2022-05-19_185936498 (cópia)](https://user-images.githubusercontent.com/73356412/169386358-e090711e-3452-4487-bc95-930a2f5c6893.png)
+
 
  Requirements of the imputation process is the creation **(B)** or merge of the reference panels, in this case the 1KGP and SABE cohorts, but other cohorts can also be used. In this step, the unphased genotypes are converted into a reference panel, producing the SABE panel of haplotypes from the brazilian SABE cohort data set.
 
-![imagem_2022-05-19_185951421 (cópia)](https://user-images.githubusercontent.com/73356412/169386407-2d6f60e6-a076-4537-a26d-c7e0673f4774.png)
+
 
  The other requirement previous to the imputation is the merge reference panel step **(C)** which uses the IMPUTE2 or IMPUTE4 software to produce the combination of two distinct panels.
 
-![imagem_2022-05-19_190004335 (cópia)](https://user-images.githubusercontent.com/73356412/169386411-896ab0b3-ff19-4e4c-8fec-a0e5976cd913.png)
+
 
 
 The next step is the process itself **(D)**, composed by three main tasks: pre-phasing, haplotype phase inference, and imputation. The pre-phasing step performs strand alignment between target and reference panel using SHAPEIT2 or SHAPEIT4, PLINK, and the scripting language AWK. Using the metodology implemented in the SHAPEIT software to infere the haplotype phase of the target data set, producing .haps and .sample files.
 
-![image](https://user-images.githubusercontent.com/51415738/169545061-6e86a35c-96ff-48bc-b57c-0f039132c978.png)
+
 
 
 ## Imputation
