@@ -110,12 +110,12 @@ Imputation.py and modificaLegend.py scripts were implemented using python langua
 Example:
 ````
 %Haplotype
-Database1
-Database2	Reference
+shapeit4 Database1
+shapeit4 Database2	Reference
 
 %Impute
-Database1	Reference
-Database2	Reference
+impute4 Database1	Reference
+impute4 Database2	Reference
 
 %Chunk	7000000
 ````
